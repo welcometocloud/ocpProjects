@@ -1,0 +1,17 @@
+pipeline {
+
+    agent any
+
+    stage('git checkout') {
+
+
+    }
+    stage('OcpLogin') {
+
+
+    }
+    stage('Deploy to OCP') {
+
+        
+    }
+}
