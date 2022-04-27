@@ -1,7 +1,7 @@
 pipeline {
 
     agent any
-    
+
     stages {
         stage('git checkout') {
             steps {
@@ -13,6 +13,7 @@ pipeline {
             steps {
                 sh '''
                     oc login https://console-openshift-console.apps.east-cluster.multicloudverse.com -u kubeadmin -p ByG4b-brDTX-zveor-mkkDp
+                    oc new-project adarsh-project
                 '''
             }
 
