@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy to OCP') {
             steps {
                 sh '''
-                oc new-app https://github.com/devfile-samples/devfile-sample-java-springboot-basic.git#main 
+                oc new-app java-springboot-basic:latest https://github.com/devfile-samples/devfile-sample-java-springboot-basic.git#main 
                 '''
             }
         }
