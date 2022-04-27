@@ -12,7 +12,7 @@ pipeline {
         stage('OcpLogin') {
             steps {
                 sh '''
-                    oc login https://console-openshift-console.apps.east-cluster.multicloudverse.com -u kubeadmin -p ByG4b-brDTX-zveor-mkkDp
+                    oc login https://console-openshift-console.apps.east-cluster.multicloudverse.com -u kubeadmin -p ByG4b-brDTX-zveor-mkkDp --insecure-skip-tls-verify
                     oc new-project adarsh-project
                 '''
             }
